@@ -10,14 +10,7 @@ I send 2 parameters:
 
 those parameters will be received by an endpoint and iperform and Dynamic Query by using Linq.
 
-[HttpPost]
-[Route("[action]")]
-public ActionResult Sort(SortObject sortObject)
-{
-    List<Product> products = getRecordsFromFile();
-    products = products.AsQueryable().OrderBy($"{sortObject.active} {sortObject.direction}").ToList();      
-    return Ok(products);
-}
+![image](https://user-images.githubusercontent.com/18402098/166017785-aa3b7fc0-e5c4-42f0-a379-7973a2328d40.png)
 
 Solution to this requirement : https://github.com/riupko/tech-task
 
