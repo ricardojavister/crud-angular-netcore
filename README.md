@@ -1,3 +1,31 @@
+# How to install this App ?
+
+Project Backend:
+
+-tech-task-api (running in port 5001)
+Make sure that everything is working fine in the backing by browsing this url: https://localhost:5001/api/product
+
+![image](https://user-images.githubusercontent.com/18402098/166557211-d824830f-b22e-49bf-bdf1-561351baae47.png)
+
+run the command :
+
+dotnet run
+
+Project Frontend:
+-tech-task-crud (running in port 4200)
+
+Since, you are using port # 5001 to run the backend, make sure that this is the same port configured in the file \tech-task-crud\src\environments\environment.ts
+
+![image](https://user-images.githubusercontent.com/18402098/166557778-091dab7d-0df3-4a6e-88bd-820c969cc6a7.png)
+
+run the command :
+
+ng serve
+
+open this url :  http://localhost:4200/products
+
+![image](https://user-images.githubusercontent.com/18402098/166557415-c46c624e-3079-4505-a716-acfe00c039e2.png)
+
 # crud-angular-netcore
 
 This project how to show a set of products from net core 3.1
