@@ -3,7 +3,7 @@
 Project Backend:
 
 -tech-task-api (running in port 5001)
-Make sure that everything is working fine in the backing by browsing this url: https://localhost:5001/api/product
+Make sure that everything is working fine in the backend by browsing this url: https://localhost:5001/api/product
 
 ![image](https://user-images.githubusercontent.com/18402098/166557211-d824830f-b22e-49bf-bdf1-561351baae47.png)
 
