@@ -48,6 +48,10 @@ Backend: NetCore 3.1
 
 ![products](https://user-images.githubusercontent.com/18402098/166009489-da79dfe0-60c5-47cf-84bd-474b7970dbd3.gif)
 
+Filtering by using LINQ from backend
+
+![filter](https://user-images.githubusercontent.com/18402098/168661142-013f4781-c48a-4da5-851c-30611aeecea5.gif)
+
 Folder
 
 tech-task-api: net core project
