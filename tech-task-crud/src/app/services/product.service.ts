@@ -12,9 +12,21 @@ export class ProductService {
   api = 'api/Product';
   constructor(private http: HttpClient) {}
 
-  getAllProduct(): Observable<Product[]> {
-    return this.http.get<Product[]>(`${environment.apiEndpoint}${this.api}`);
+  getAllProduct(filter?: string): Observable<Product[]> {
+    return this.http.get<Product[]>(
+      `${environment.apiEndpoint}${this.api}` +
+        '/GetAll?filter=' +
+        filter?.toLowerCase()
+    );
   }
+
+  // getProductByFilter(filter: string): Observable<Product[]> {
+  //   return this.http.get<Product[]>(
+  //     `${environment.apiEndpoint}${this.api}` +
+  //       '/GetRecordsByFilterName?filter=' +
+  //       filter.toLowerCase()
+  //   );
+  // }
 
   sortProducts(sort: Sort): Observable<Product[]> {
     return this.http.post<Product[]>(
